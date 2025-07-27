@@ -11,7 +11,7 @@ public class Solution {
         /* Enter your code here. Print output to STDOUT. */
         System.out.println(A.length()+B.length());
         if(A.compareTo(B)>0){
-            System.out.print("Yes");
+            System.out.println("Yes");
         }
         else{
             System.out.println("No");
