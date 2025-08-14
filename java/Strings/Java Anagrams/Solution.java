@@ -4,9 +4,8 @@ public class Solution {
 
     static boolean isAnagram(String a, String b) {
         // Complete the function
-        boolean ana = true;
         if(a.length() != b.length()){
-            ana = false;
+            return false;
         }
         else{
             int [] arr = new int[26];
@@ -16,11 +15,11 @@ public class Solution {
             }
             for(int j =0 ; j<26 ; j++){
                 if (arr[j] != 0){
-                    ana=false;
+                    return false;
                 }
             }
         }
-        return ana;
+        return true;
     }
 
     public static void main(String[] args) {
